@@ -4,20 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
   <title>Interest Calculator</title>
 </head>
 <body>
   <h1>Interest Calculator</h1>
   <div class="main-area">
     <!-- Input field for initial Amount -->
-    <label for="deposit">Deposit:</label>
-    <input type="number" id="deposit">
+    <div class="input-field">
+      <label for="deposit">Deposit:</label>
+      <input type="number" id="deposit" placeholder="Enter initial deposit amount">
+    </div> <!--/deposit -->
     <!-- drop-down menu for period of time -->
-    <select name="period" id="period">
-      <option value="6">6 Months</option>
-      <option value="12">1 Year(12 Months)</option>
-      <option value="18">1.5 Year(18 Months)</option>
-    </select>
+    <div class="input-field">
+      <label for="period">Deposit Period</label>
+      <select name="period" id="period">
+        <option value="6">6 Months</option>
+        <option value="12">1 Year(12 Months)</option>
+        <option value="18">1.5 Year(18 Months)</option>
+      </select>
+    </div><!--/period-->
     <!-- button to calculate interest -->
     <button>Calculate Interest</button>
     <!-- display the result -->
